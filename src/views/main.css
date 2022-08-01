@@ -6,9 +6,183 @@
  
 }
 
+.wrapper h1 {
+  font-family: 'Oleo Script', cursive;
+  color: #613159 ;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+}
+
 .content-box{
   width: auto;
   display: flex;
   justify-content: space-evenly;
   gap: 40px;
+}
+
+/* FORM */
+
+.form-box {
+  box-shadow: 0px -1px 15px 7px rgba(255,131,124,0.16);
+  width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.form-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Oleo Script', cursive;
+  letter-spacing: 0.5px;
+  color: #613159;
+  font-size: 36px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form div.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form div.btn-container button {
+  width: 104px;
+  border-radius: 20px;
+  border: none;
+  height: 36px;
+  background-color: #CD526A;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+.form div.btn-container button:hover {
+  color: #CD526A;
+  background-color: white;
+}
+
+.form div label {
+  font-family: 'Lato', sans-serif;
+  color: #613159;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form div input {
+  padding: 5px 15px;
+  border: none;
+  height: 36px;
+  border-radius: 20px;
+  background-color: #cd526b42 ;
+  font-family: 'Lato', sans-serif ;
+  color: #613159 ;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+
+
+/* RESULT */
+.result-box {
+  box-shadow: 0px -1px 15px 7px rgba(255,131,124,0.16);
+  width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.result-box .teacher-name{
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #613159 ;
+}
+
+.result-box .student-name {
+  font-family: 'Lato', sans-serif;
+  color: #613159 ;
+  font-size: 24px;
+}
+
+.number-box {
+  box-shadow: 0px -1px 15px 7px rgba(255,131,124,0.16);
+  width: 200px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.hexagon {
+  border-radius: 50%;
+  width: 178px;
+  height: 178px;
+  display: grid;
+  place-content: center;
+}
+
+.hexagon-color-red{
+  background-color: red;
+}
+
+.hexagon-color-orange {
+  background-color: orange;
+}
+
+.hexagon-color-yellow {
+  background-color: rgb(212, 212, 5);
+}
+
+.hexagon-color-green-yellow {
+  background-color: yellowgreen;
+}
+
+.hexagon-color-blue-green {
+  background-color: rgb(0, 128, 75);
+}
+
+.hexagon-color-green {
+  background-color: green;
+}
+
+
+p.grade {
+  font-size: 98px;
+  font-family: 'Oleo Script', cursive;
+  color: white;
+  
+}
+
+.result-box .result-text-box {
+  padding: 0;
+}
+
+.result-box .result-text-box p{
+  font-size: 20px;
+  color: #613159 ;
+  margin-bottom: 0;
+}
+
+.result-box .result-text-box .result-text{
+  font-size: 32px;
+  color: #CD526A;
+  font-family: 'Oleo Script', cursive;
+  margin-top: 5px;
+  margin-bottom: -10px;
 }
