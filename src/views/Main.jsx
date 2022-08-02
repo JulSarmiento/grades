@@ -11,6 +11,10 @@ export default function Main() {
     setValues({ ...values, [e.target.name] : e.target.value })
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div className="wrapper">
 
@@ -54,6 +58,7 @@ export default function Main() {
                 id="grade"
                 min={0}
                 max={10}
+                maxLength={2}
                 onChange={handlerOnChange} 
               />
             </div>
@@ -69,17 +74,15 @@ export default function Main() {
             </div>
             
             <div className="btn-container">
-              <button type="submit">Ingresar</button>
+              <button type="submit" onClick={handleSubmit}>Ingresar</button>
               <button type="clear">clear</button>
             </div>
           </form>
 
-        </div>
-        
+        </div>       
 
         <Result values={values}/>
-        {console.log(values)}
-
+        
       </div> 
 
     </div> 
